@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static string playerCharacter = "Animations/Player/Player";
     public float moveSpeed;
 
     private Animator anim;
@@ -14,6 +15,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        anim.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>(playerCharacter);
     }
 
     // Update is called once per frame
