@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public static string playerCharacter = "Animations/Player/Player";
+    public static string playerCharacter = "Animations/MalePlayer/Player";
     public float moveSpeed;
 
     private Animator anim;
