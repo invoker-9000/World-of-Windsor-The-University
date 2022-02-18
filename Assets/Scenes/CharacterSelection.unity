@@ -290,7 +290,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1911097462}
         m_TargetAssemblyTypeName: CharacterSelector, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: PlayGameMale
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -873,7 +873,7 @@ RectTransform:
   m_GameObject: {fileID: 1984568610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 14, y: 14, z: 1}
+  m_LocalScale: {x: 20, y: 14, z: 1}
   m_Children:
   - {fileID: 1471439275}
   m_Father: {fileID: 587360246}
@@ -927,7 +927,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1984568613}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1911097462}
+        m_TargetAssemblyTypeName: CharacterSelector, Assembly-CSharp
+        m_MethodName: PlayGameFemale
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1984568613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -948,7 +960,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4539530199407426959, guid: 2fe765e21881e44f99d7a5bea66864c7, type: 3}
+  m_Sprite: {fileID: -4010823700641635966, guid: 511bdde72e29b4aaebd03d59e6e37c1a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
