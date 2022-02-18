@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject dBox;
     public Text dText;
     public bool dialogActive;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -18,11 +19,13 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dialogActive && Input.GetKeyDown(KeyCode.Space))
+        /*if (dialogActive && Input.GetKeyDown(KeyCode.Space))
         {
             dBox.SetActive(false);
             dialogActive = false;
-        }
+        }*/
+
+        
     }
     public void ShowBox(string dialogue)
     {
@@ -31,4 +34,11 @@ public class DialogueManager : MonoBehaviour
         dText.text = dialogue;
 
     }
+    public void HideBox()
+    {
+        dialogActive = false;
+        dBox.SetActive(false);
+    }
+   
+
 }

@@ -24,10 +24,20 @@ public class DialogueHolder : MonoBehaviour
     {
         if(other.gameObject.name == "Player")
         {
-            if(Input.GetKeyUp(KeyCode.Space))
-            {
+            /*if(Input.GetKeyUp(KeyCode.Space))
+            {*/
                 dMan.ShowBox(dialogue);
-            }
+            //}
         }
     }
+     void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.gameObject.name == "Player")
+        {
+            dMan.HideBox();
+        }
+
+    }
+
+   
 }
