@@ -11,6 +11,12 @@ public class QuestObject : MonoBehaviour
     public string startText;
     public string endText;
 
+    public bool isItemQuest;
+    public string targetItem;
+
+    public AudioSource questStartSound;
+    public AudioSource questEndSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,12 +26,21 @@ public class QuestObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isItemQuest)
+        {
+            if(questManager.itemCollected == targetItem )
+            {
+                questManager.itemCollected = null;
+                EndQuest();
+            }
+        }
         
     }
 
     public void StartQuest()
     {
         questManager.ShowQuestText(startText);
+        questStartSound.Play();
     }
 
     public void EndQuest()
@@ -33,5 +48,14 @@ public class QuestObject : MonoBehaviour
         questManager.ShowQuestText(endText);
         questManager.questCompleted[questNumber] = true;
         gameObject.SetActive(false);
+
+        QuestTrigger questTrigger = FindObjectOfType<QuestTrigger>();
+        if (questManager.quests.Length > questTrigger.questNumber + 1)
+        {
+            questTrigger.questNumber++;
+        }
+
+        questEndSound.Play();
+        
     }
 }
