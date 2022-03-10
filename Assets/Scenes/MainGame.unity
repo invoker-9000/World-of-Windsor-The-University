@@ -402,6 +402,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4934240725265313652, guid: 0d5f290ab66e6a340badb838126384ae, type: 3}
   m_PrefabInstance: {fileID: 1384035535}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &694646827 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1272535560320586769, guid: e754a4a7cc56c402bb0807ff8d3baa23, type: 3}
+  m_PrefabInstance: {fileID: 4215533968872486102}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &757925275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1009,6 +1014,11 @@ MonoBehaviour:
   questNumber: 0
   startQuest: 1
   endQuest: 0
+--- !u!82 &1267702775 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8140616393588319339, guid: e754a4a7cc56c402bb0807ff8d3baa23, type: 3}
+  m_PrefabInstance: {fileID: 4215533968872486102}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1299828723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1437,6 +1447,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.63887787, y: 0.24492812}
   m_EdgeRadius: 0
+--- !u!82 &1720651889 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3930316740335576300, guid: e754a4a7cc56c402bb0807ff8d3baa23, type: 3}
+  m_PrefabInstance: {fileID: 4215533968872486102}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1761811504 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7657541834669492074, guid: 72910b030b12fc84fb877b45592af6e2, type: 3}
@@ -1826,6 +1841,14 @@ PrefabInstance:
       propertyPath: questManager
       value: 
       objectReference: {fileID: 907561197}
+    - target: {fileID: 438500826444368919, guid: e754a4a7cc56c402bb0807ff8d3baa23, type: 3}
+      propertyPath: questEndSound
+      value: 
+      objectReference: {fileID: 694646827}
+    - target: {fileID: 438500826444368919, guid: e754a4a7cc56c402bb0807ff8d3baa23, type: 3}
+      propertyPath: questStartSound
+      value: 
+      objectReference: {fileID: 1720651889}
     - target: {fileID: 3744504143521646944, guid: e754a4a7cc56c402bb0807ff8d3baa23, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1979,5 +2002,13 @@ PrefabInstance:
       propertyPath: questManager
       value: 
       objectReference: {fileID: 907561197}
+    - target: {fileID: 8565636660375527663, guid: e754a4a7cc56c402bb0807ff8d3baa23, type: 3}
+      propertyPath: questEndSound
+      value: 
+      objectReference: {fileID: 694646827}
+    - target: {fileID: 8565636660375527663, guid: e754a4a7cc56c402bb0807ff8d3baa23, type: 3}
+      propertyPath: questStartSound
+      value: 
+      objectReference: {fileID: 1267702775}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e754a4a7cc56c402bb0807ff8d3baa23, type: 3}

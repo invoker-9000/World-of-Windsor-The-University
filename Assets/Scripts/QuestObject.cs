@@ -13,6 +13,10 @@ public class QuestObject : MonoBehaviour
 
     public bool isItemQuest;
     public string targetItem;
+
+    public AudioSource questStartSound;
+    public AudioSource questEndSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +40,7 @@ public class QuestObject : MonoBehaviour
     public void StartQuest()
     {
         questManager.ShowQuestText(startText);
+        questStartSound.Play();
     }
 
     public void EndQuest()
@@ -49,6 +54,8 @@ public class QuestObject : MonoBehaviour
         {
             questTrigger.questNumber++;
         }
+
+        questEndSound.Play();
         
     }
 }
