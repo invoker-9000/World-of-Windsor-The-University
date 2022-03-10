@@ -43,5 +43,12 @@ public class QuestObject : MonoBehaviour
         questManager.ShowQuestText(endText);
         questManager.questCompleted[questNumber] = true;
         gameObject.SetActive(false);
+
+        QuestTrigger questTrigger = FindObjectOfType<QuestTrigger>();
+        if (questManager.quests.Length > questTrigger.questNumber + 1)
+        {
+            questTrigger.questNumber++;
+        }
+        
     }
 }
