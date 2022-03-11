@@ -32,6 +32,8 @@ public class DialogueManager : MonoBehaviour
         dialogActive = true;
         dBox.SetActive(true);
         dText.text = dialogue;
+        RectTransform rt = dBox.GetComponent<RectTransform>();
+        rt.sizeDelta = new Vector2(1000, 50 + (dialogue.Length / 53) * 50);
 
     }
     public void HideBox()
