@@ -1,10 +1,12 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
+    public string sceneToLoad;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,14 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("CharacterSelection");
 
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.name == "Player")
+        {
+        SceneManager.LoadScene(sceneToLoad);
+        }
     }
 
 }

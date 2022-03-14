@@ -286,6 +286,7 @@ Transform:
   - {fileID: 6891190651848871092}
   - {fileID: 5225022414331242612}
   - {fileID: 4171278944462256911}
+  - {fileID: 2897367600179418948}
   m_Father: {fileID: 3744504143521646944}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -308,6 +309,57 @@ MonoBehaviour:
   questCompleted: 
   dialogueManager: {fileID: 0}
   itemCollected: 
+--- !u!1 &3576775505392758617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2897367600179418948}
+  - component: {fileID: 7778161499191411884}
+  m_Layer: 0
+  m_Name: Quest 2 - Safe Lancer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2897367600179418948
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3576775505392758617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8660988842552298946}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7778161499191411884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3576775505392758617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb13aea799db44a78acd1d0e9086bc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 2
+  questManager: {fileID: 6003337978703798636}
+  startText: Please Go To Building And Scan
+  endText: Great Job!
+  isItemQuest: 0
+  targetItem: 
+  questStartSound: {fileID: 7640427368109195248}
+  questEndSound: {fileID: 1272535560320586769}
 --- !u!1 &3825987665403647851
 GameObject:
   m_ObjectHideFlags: 0
