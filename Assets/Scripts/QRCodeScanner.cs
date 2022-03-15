@@ -4,9 +4,12 @@ using UnityEngine;
 using ZXing;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class QRCodeScanner : MonoBehaviour
 {
+    
+
     [SerializeField]
     private RawImage _rawImageBackground;
     [SerializeField]
@@ -85,6 +88,7 @@ public class QRCodeScanner : MonoBehaviour
         {
             _textOut.text = "Failed in try";
         }
+
     }
 
     public void OnClickScan()
