@@ -418,6 +418,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: 4849505152
       objectReference: {fileID: 0}
+    - target: {fileID: 4358242423278619557, guid: 8da4275afb6939b4db13506d803daa79, type: 3}
+      propertyPath: m_Points.Array.data[2].x
+      value: -0.8870901
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358242423278619557, guid: 8da4275afb6939b4db13506d803daa79, type: 3}
+      propertyPath: m_Points.Array.data[2].y
+      value: -0.15695597
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358242423278619557, guid: 8da4275afb6939b4db13506d803daa79, type: 3}
+      propertyPath: m_Points.Array.data[3].x
+      value: -0.8815955
+      objectReference: {fileID: 0}
+    - target: {fileID: 4358242423278619557, guid: 8da4275afb6939b4db13506d803daa79, type: 3}
+      propertyPath: m_Points.Array.data[3].y
+      value: 0.4187504
+      objectReference: {fileID: 0}
     - target: {fileID: 4358242423278619559, guid: 8da4275afb6939b4db13506d803daa79, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2583,7 +2599,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1434783298}
   - component: {fileID: 1434783297}
-  - component: {fileID: 1434783299}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -2656,32 +2671,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1434783299
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434783296}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 26.82, y: 13.606436}
-    newSize: {x: 26.82, y: 13.606436}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 26.82, y: 13.606436}
-  m_EdgeRadius: 0
 --- !u!4 &1502896281 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1048170332646459575, guid: 6e876aefc64e72047930c7926d52b761, type: 3}
@@ -3161,11 +3150,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1048170332646459575, guid: 6e876aefc64e72047930c7926d52b761, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.24
+      value: 24.2
       objectReference: {fileID: 0}
     - target: {fileID: 1048170332646459575, guid: 6e876aefc64e72047930c7926d52b761, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.24
+      value: -5.181
       objectReference: {fileID: 0}
     - target: {fileID: 1048170332646459575, guid: 6e876aefc64e72047930c7926d52b761, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3402,7 +3391,7 @@ GameObject:
   - component: {fileID: 2138761201}
   - component: {fileID: 2138761200}
   m_Layer: 0
-  m_Name: Square
+  m_Name: bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
