@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
     public Text dText;
     public bool dialogActive;
     
+    
 
     // Start is called before the first frame update
     void Start()
@@ -19,11 +20,11 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (dialogActive && Input.GetKeyDown(KeyCode.Space))
+        if (dialogActive && Input.GetKeyDown("space"))
         {
             dBox.SetActive(false);
             dialogActive = false;
-        }*/
+        }
 
         
     }

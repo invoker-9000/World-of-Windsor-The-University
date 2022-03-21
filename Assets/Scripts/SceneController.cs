@@ -16,10 +16,16 @@ public class SceneController : MonoBehaviour
     {
 
     }
-    public void LoadCharacterSelectionScene()
+    public void StorylineIntegration()
+    {
+        SceneManager.LoadScene("Storyline");
+
+    }
+    public void CharacterSeletionIntegration()
     {
         SceneManager.LoadScene("CharacterSelection");
 
     }
+
 
 }
