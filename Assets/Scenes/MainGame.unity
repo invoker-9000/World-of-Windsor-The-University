@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &306082421 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8746949328178760295, guid: 32a56075b2545404e91a7f83e17b2b40, type: 3}
+  m_PrefabInstance: {fileID: 806616996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0a26002b93341918efbfdbb30d5f21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &313305359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -480,6 +491,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8da4275afb6939b4db13506d803daa79, type: 3}
+--- !u!114 &763567089 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2447497891209349637, guid: 32a56075b2545404e91a7f83e17b2b40, type: 3}
+  m_PrefabInstance: {fileID: 806616996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f0a26002b93341918efbfdbb30d5f21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &772121685 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4358242423278619559, guid: 8da4275afb6939b4db13506d803daa79, type: 3}
@@ -3528,6 +3550,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 907561197}
     - target: {fileID: 438500826444368919, guid: e754a4a7cc56c402bb0807ff8d3baa23, type: 3}
+      propertyPath: inventoryItem
+      value: 
+      objectReference: {fileID: 306082421}
+    - target: {fileID: 438500826444368919, guid: e754a4a7cc56c402bb0807ff8d3baa23, type: 3}
       propertyPath: questEndSound
       value: 
       objectReference: {fileID: 694646827}
@@ -3688,6 +3714,10 @@ PrefabInstance:
       propertyPath: questManager
       value: 
       objectReference: {fileID: 907561197}
+    - target: {fileID: 8565636660375527663, guid: e754a4a7cc56c402bb0807ff8d3baa23, type: 3}
+      propertyPath: inventoryItem
+      value: 
+      objectReference: {fileID: 763567089}
     - target: {fileID: 8565636660375527663, guid: e754a4a7cc56c402bb0807ff8d3baa23, type: 3}
       propertyPath: questEndSound
       value: 
