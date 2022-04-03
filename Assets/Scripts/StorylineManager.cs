@@ -7,15 +7,23 @@ public class StorylineManager : MonoBehaviour
 {
     public GameObject dBox;
     public Text dText;
+   // public AudioSource musicSource;
+   // public AudioClip[] musicClips;
 
     public bool dialogActive;
+
+    private DialogueMusicManager mMan;
+    private SceneController sMan;
 
     public string[] dialogLines;
     public int currentLine;
     // Start is called before the first frame update
-    void Start()
+     void Start()
     {
-        
+        mMan= FindObjectOfType<DialogueMusicManager>();
+        sMan= FindObjectOfType<SceneController>();
+      
+      // mMan.PlayMusicLoop();
     }
 
     // Update is called once per frame
@@ -23,10 +31,12 @@ public class StorylineManager : MonoBehaviour
     {
         if(dialogActive && Input.GetKeyDown(KeyCode.Space))
         {
-            //dBox.SetActive(false);
-            //dialogActive=false;
 
-            currentLine++;
+              
+                mMan.musicSource.clip= mMan.musicClips[currentLine];
+                mMan.musicSource.Play();
+                currentLine++;
+            
         }
        if(dialogActive && currentLine >= dialogLines.Length){
 
@@ -34,9 +44,13 @@ public class StorylineManager : MonoBehaviour
             dialogActive=false;
 
             currentLine=0;
+            sMan.CharacterSeletionIntegration();
         }
         dText.text = dialogLines[currentLine];
+
+       
      }
+
 
 
 }
