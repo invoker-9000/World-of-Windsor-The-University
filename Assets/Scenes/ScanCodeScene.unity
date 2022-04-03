@@ -152,8 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1f359aa1a8741cf96884e86c3403cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: MainGame
-  scene1: 
+  sceneToLoad: 
 --- !u!4 &123827831
 Transform:
   m_ObjectHideFlags: 0
@@ -385,8 +384,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 123827830}
-        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+      - m_Target: {fileID: 286968116}
+        m_TargetAssemblyTypeName: QRCodeScanner, Assembly-CSharp
         m_MethodName: OnClickDone
         m_Mode: 1
         m_Arguments:
@@ -445,6 +444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 286968117}
   - component: {fileID: 286968116}
+  - component: {fileID: 286968118}
   m_Layer: 0
   m_Name: QRCodeScanner
   m_TagString: Untagged
@@ -468,6 +468,7 @@ MonoBehaviour:
   _aspectRatioFitter: {fileID: 1747691678}
   _textOut: {fileID: 679771360}
   _scanZone: {fileID: 739453030}
+  found: 0
 --- !u!4 &286968117
 Transform:
   m_ObjectHideFlags: 0
@@ -482,6 +483,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &286968118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286968115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef1f359aa1a8741cf96884e86c3403cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: 
 --- !u!1 &679771358
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,13 +580,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 36
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 40
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1183,7 +1197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1827386265
 RectTransform:
   m_ObjectHideFlags: 0

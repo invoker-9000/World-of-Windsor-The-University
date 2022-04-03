@@ -32,9 +32,6 @@ public class SceneController : MonoBehaviour
         }
     }
 
-    public void OnClickDone()
-    {
-        SceneManager.LoadScene(sceneToLoad);
-    }
+   
 
 }

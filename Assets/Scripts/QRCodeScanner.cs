@@ -22,7 +22,8 @@ public class QRCodeScanner : MonoBehaviour
     private bool _isCamAvailable;
     private WebCamTexture _cameraTexture;
 
-
+    private bool scanned = false ;
+    public bool found = false;
 
     void Start()
     {
@@ -32,7 +33,9 @@ public class QRCodeScanner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!scanned)
         UpdateCameraRender();
+
         
     }
 
@@ -64,8 +67,12 @@ public class QRCodeScanner : MonoBehaviour
         }
         float ratio = (float)_cameraTexture.width/(float)_cameraTexture.height;
         _aspectRatioFitter.aspectRatio = ratio;
-        int orientation = -_cameraTexture.videoRotationAngle;
-        _rawImageBackground.rectTransform.localEulerAngles = new Vector3(0, 0, orientation);
+        int orientation = _cameraTexture.videoRotationAngle;
+        _rawImageBackground.rectTransform.localEulerAngles = new Vector3(0, -180, 0);
+        if (!scanned)
+
+        Scan();
+
 
     }
     private void Scan()
@@ -77,11 +84,15 @@ public class QRCodeScanner : MonoBehaviour
 
             if( result != null)
             {
+                SceneController sc = new SceneController();
+            
                 _textOut.text = result.Text;
+                scanned = true;
+               
             }
             else
             {
-                _textOut.text = "Failed to Read the QR Code";
+                _textOut.text = "Scanning . . .";
             }
         }
         catch 
@@ -96,4 +107,19 @@ public class QRCodeScanner : MonoBehaviour
         Scan();
     }
 
+   
+       public  void OnClickDone()
+   {
+      if (scanned)
+      {
+        
+       _cameraTexture.Stop();
+       
+      SceneManager.LoadScene("MainGame");
+      
+       }
+      
+       
+       
+   }
 }
