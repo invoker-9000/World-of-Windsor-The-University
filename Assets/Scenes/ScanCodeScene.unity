@@ -152,7 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1f359aa1a8741cf96884e86c3403cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   sceneToLoad: 
+=======
+>>>>>>> Stashed changes
 --- !u!4 &123827831
 Transform:
   m_ObjectHideFlags: 0
@@ -468,6 +471,12 @@ MonoBehaviour:
   _aspectRatioFitter: {fileID: 1747691678}
   _textOut: {fileID: 679771360}
   _scanZone: {fileID: 739453030}
+<<<<<<< Updated upstream
+=======
+  _isCamAvailable: 0
+  _cameraTexture: {fileID: 0}
+  scanned: 0
+>>>>>>> Stashed changes
   found: 0
 --- !u!4 &286968117
 Transform:
@@ -495,7 +504,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1f359aa1a8741cf96884e86c3403cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   sceneToLoad: 
+=======
+>>>>>>> Stashed changes
 --- !u!1 &679771358
 GameObject:
   m_ObjectHideFlags: 0
