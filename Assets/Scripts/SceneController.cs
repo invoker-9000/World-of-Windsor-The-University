@@ -26,6 +26,10 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("CharacterSelection");
 
     }
+    public void ExitGame()
+    {
+        SceneManager.LoadScene("MainGame");
+    }
 
 
 }
