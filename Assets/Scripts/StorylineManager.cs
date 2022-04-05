@@ -29,23 +29,30 @@ public class StorylineManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(dialogActive && Input.GetKeyDown(KeyCode.Space))
+
+        
+        if (dialogActive && Input.GetKeyDown(KeyCode.Space))
         {
+            currentLine++;
 
-              
-                mMan.musicSource.clip= mMan.musicClips[currentLine];
+            if (currentLine >= dialogLines.Length)
+            {
+
+                dBox.SetActive(false);
+                dialogActive = false;
+
+                currentLine = 0;
+                sMan.CharacterSeletionIntegration();
+
+            }
+            else
+            {
+                mMan.musicSource.clip = mMan.musicClips[currentLine];
                 mMan.musicSource.Play();
-                currentLine++;
-            
-        }
-       if(dialogActive && currentLine >= dialogLines.Length){
+            }
 
-            dBox.SetActive(false);
-            dialogActive=false;
-
-            currentLine=0;
-            sMan.CharacterSeletionIntegration();
         }
+       
         dText.text = dialogLines[currentLine];
 
        
