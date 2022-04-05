@@ -60,6 +60,9 @@ public class QuestObject : MonoBehaviour
         questEndSound.Play();
         if (inventoryItem != null) {
             inventoryItem.gameObject.SetActive(true);
-        }        
+        }    
+      
+        ScoreManagerScript.instance.AddPoint();
+
     }
 }
