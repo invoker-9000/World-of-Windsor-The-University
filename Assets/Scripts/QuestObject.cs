@@ -17,8 +17,6 @@ public class QuestObject : MonoBehaviour
     public AudioSource questStartSound;
     public AudioSource questEndSound;
 
-    public InventoryItem inventoryItem;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -58,11 +56,6 @@ public class QuestObject : MonoBehaviour
         }
 
         questEndSound.Play();
-        if (inventoryItem != null) {
-            inventoryItem.gameObject.SetActive(true);
-        }    
-      
-        ScoreManagerScript.instance.AddPoint();
-
+        
     }
 }
