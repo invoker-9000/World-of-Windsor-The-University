@@ -28,8 +28,9 @@ public class SceneController : MonoBehaviour
     {
         if(other.gameObject.name == "Player")
         {
-        SceneManager.LoadScene(sceneToLoad);
+            Application.LoadLevel(sceneToLoad);
         }
+
     }
 
    

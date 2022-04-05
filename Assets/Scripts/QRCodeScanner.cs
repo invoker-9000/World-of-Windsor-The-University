@@ -114,12 +114,14 @@ public class QRCodeScanner : MonoBehaviour
       {
         
        _cameraTexture.Stop();
-       
-      SceneManager.LoadScene("MainGame");
+
+      
+        Application.LoadLevel("MainGame");
       
        }
       
        
        
    }
+  
 }

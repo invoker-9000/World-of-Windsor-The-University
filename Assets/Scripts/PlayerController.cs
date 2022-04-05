@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
         anim.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>(playerCharacter);
 
         rigidbody = GetComponent<Rigidbody2D>();
+        
     }
 
     // Update is called once per frame
