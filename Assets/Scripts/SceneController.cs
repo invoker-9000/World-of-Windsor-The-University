@@ -29,7 +29,8 @@ public class SceneController : MonoBehaviour
     
     public void ExitGame()
     {
-        SceneManager.LoadScene("MainGame");
+        Application.LoadLevel("MainGame");
+      //  SceneManager.LoadScene("MainGame");
     }
 
 
