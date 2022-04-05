@@ -1909,7 +1909,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1585831324}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: RNGminiGameReturn
+        m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
