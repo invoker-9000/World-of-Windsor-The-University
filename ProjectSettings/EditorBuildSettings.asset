@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RNG.unity
     guid: 9ceee6dd6d14d1e408e7a23456d7c403
+  - enabled: 1
+    path: Assets/Scenes/ScanCodeScene.unity
+    guid: 50ccdd0a6bfc3e64089eec95ee142c1e
   m_configObjects: {}
