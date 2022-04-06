@@ -120,8 +120,19 @@ public class QRCodeScanner : MonoBehaviour
       
        }
       
-       
-       
+   }
+      public  void OnClickDoneExit()
+   {
+      if (scanned)
+      {
+        
+       _cameraTexture.Stop();
+
+      
+        SceneManager.LoadScene("ExitScene");
+      
+       }
+      
    }
   
 }
