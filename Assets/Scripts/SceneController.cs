@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    public string sceneToLoad;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,18 +26,11 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("CharacterSelection");
 
     }
+
     public void ExitGame()
     {
         SceneManager.LoadScene("MainGame");
-    }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.gameObject.name == "Player")
-        {
-            SceneManager.LoadScene(sceneToLoad);
-        }
     }
-
 
 }
