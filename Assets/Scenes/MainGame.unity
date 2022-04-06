@@ -3185,6 +3185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1f359aa1a8741cf96884e86c3403cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: ScanCodeScene
 --- !u!61 &1181207636
 BoxCollider2D:
   m_ObjectHideFlags: 0

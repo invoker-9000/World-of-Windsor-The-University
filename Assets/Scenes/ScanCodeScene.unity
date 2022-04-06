@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: QRCodeObjects
       objectReference: {fileID: 0}
+    - target: {fileID: 9191241982230299596, guid: a1c202590c69704458e0fad99c8d4e46, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClickDoneExit
+      objectReference: {fileID: 0}
     - target: {fileID: 9191241982793355551, guid: a1c202590c69704458e0fad99c8d4e46, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
