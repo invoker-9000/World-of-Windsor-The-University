@@ -16,6 +16,7 @@ public class SceneController : MonoBehaviour
     {
 
     }
+    public string sceneToLoad;
     public void StorylineIntegration()
     {
         SceneManager.LoadScene("Storyline");
@@ -32,5 +33,15 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("MainGame");
 
     }
+    
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.name == "Player")
+        {
+            SceneManager.LoadScene(sceneToLoad);
+        }
+
+    }
+
 
 }
